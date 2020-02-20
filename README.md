@@ -7,7 +7,7 @@ This Guide is indended to support the reading of sections 15 to 17 of paper *Com
 Software required:
 * Quipper
 * PyZX
-* QISKit (optinal)
+* QISKit (optional)
 * IBM-Q Experience account
 * gawk (quipperToQiskit)
 
