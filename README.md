@@ -1,6 +1,6 @@
 # Quantamorphisms Guide
 
-The Quantamorphism Guide allows any reader to test the experiences preform in the paper (*Compiling quantamorphisms for the IBM Q-Experience*).
+This Guide is indended to support the reading of sections 15 to 17 of paper *Compiling quantamorphisms for the IBM Q-Experience*. These address the use of a tool-chain leading to running quantum circuits generated from quantamorphism specifications on IBM Q-Experience devices.
 
 ### Prerequisites
 
