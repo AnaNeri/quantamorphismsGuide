@@ -5,17 +5,19 @@ This Guide is indended to support the reading of sections 15 to 17 of paper *Com
 ### Prerequisites
 
 Software required:
-* Quipper
-* PyZX
-* QISKit (optional)
+* Quipper (version 0.8)
+* PyZX 
+* QISKit (version 0.14) \*
 * IBM-Q Experience account
 * gawk (quipperToQiskit)
+
+\* Qiskit may run in IBM-Q Experience without the need for installation. 
 
 ### Authors
 
 * **Ana Neri** - [AnaNeri](https://github.com/AnaNeri)
-* **José Nuno Oliveira** 
-* **Rui Soares Barbosa**
+* **José Nuno Oliveira** - [JoseNunoOliveira](https://github.com/JoseNunoOliveira)
+* **Rui Soares Barbosa** - [ruisb](https://github.com/ruisb)
 
 ### License
 
@@ -27,11 +29,12 @@ We acknowledge the financial support by [INESC TEC](https://www.inesctec.pt/en#i
 
 ### Tool-chain
 
+![alt text](../img/tool-chain.png)
 
 ### Experiment
 
-* Start by loading and running source file qfold_cnot_7x2_quipper.hs (nb: quipper requires ghci version XXX).
+* Start by loading and running source file qfold_cnot_7x2_quipper.hs (nb: quipper requires GHC 8.0 Note: GHC 7.10 is too broken and will not be supported by Quipper. ).
 
-* Then do the same for jupyter notebook [fold_cnot_7x2_qiskit.ipynb](https://nbviewer.jupyter.org/github/AnaNeri/quantamorphismsGuide/blob/master/Experiment/qfold_cnot_7x2_qiskit.ipynb#index)
+* Then do the same for jupyter notebook [fold_cnot_7x2_qiskit.ipynb](https://nbviewer.jupyter.org/github/AnaNeri/quantamorphismsGuide/blob/master/Experiment/qfold_cnot_7x2_qiskit.ipynb)
 
 
