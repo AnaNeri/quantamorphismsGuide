@@ -32,6 +32,6 @@ We acknowledge the financial support by [INESC TEC](https://www.inesctec.pt/en#i
 
 * Start by loading and running source file qfold_cnot_7x2_quipper.hs (nb: quipper requires ghci version XXX).
 
-* Then do the same for jupyter notebook qfold_cnot_7x2_qiskit.ipynb
+* Then do the same for jupyter notebook [fold_cnot_7x2_qiskit.ipynb](https://nbviewer.jupyter.org/github/AnaNeri/quantamorphismsGuide/blob/master/Experiment/qfold_cnot_7x2_qiskit.ipynb#index)
 
 
