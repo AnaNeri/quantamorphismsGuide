@@ -11,14 +11,27 @@ Software required:
 * IBM-Q Experience account
 * gawk (quipperToQiskit)
 
-## Authors
+### Authors
 
 * **Ana Neri** - [AnaNeri](https://github.com/AnaNeri)
 * **José Nuno Oliveira** 
 * **Rui Soares Barbosa**
 
-## License
+### License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
+### Acknowledgments
+
+We acknowledge the financial support by [INESC TEC](https://www.inesctec.pt/en#intro) and the opportunity granted by [QuantaLab](http://www.quantalab.org/) [IBM Q Academic Hub](https://www.ibm.com/quantum-computing/network/members/).
+
+### Tool-chain
+
+
+### Experiment
+
+* Start by loading and running source file qfold_cnot_7x2_quipper.hs (nb: quipper requires ghci version XXX).
+
+* Then do the same for jupyter notebook qfold_cnot_7x2_qiskit.ipynb
+
+
