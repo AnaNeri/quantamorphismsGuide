@@ -29,7 +29,7 @@ We acknowledge the financial support by [INESC TEC](https://www.inesctec.pt/en#i
 
 ### Tool-chain
 
-![alt text](../img/tool-chain.png)
+![alt text](./img/tool-chain.png)
 
 ### Experiment
 
