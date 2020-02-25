@@ -5,11 +5,11 @@ This Guide is indended to support the reading of sections 15 to 17 of paper *Com
 ### Prerequisites
 
 Software required:
-* Quipper (version 0.8)
-* PyZX 
-* QISKit (version 0.14) \*
-* IBM-Q Experience account
-* gawk (quipperToQiskit)
+* [Quipper](https://www.mathstat.dal.ca/~selinger/quipper/) (version 0.8)
+* [PyZX](https://github.com/Quantomatic/pyzx) 
+* [QISKit](https://qiskit.org/) (version 0.14) \*
+* [IBM-Q Experience](https://quantum-computing.ibm.com/) account
+* [gawk](https://www.gnu.org/software/gawk/) (quipperToQiskit)
 
 \* Qiskit may run in IBM-Q Experience without the need for installation. 
 
@@ -35,6 +35,6 @@ We acknowledge the financial support by [INESC TEC](https://www.inesctec.pt/en#i
 
 * Start by loading and running source file qfold_cnot_7x2_quipper.hs (nb: quipper requires GHC 8.0 Note: GHC 7.10 is too broken and will not be supported by Quipper. ).
 
-* Then do the same for jupyter notebook [fold_cnot_7x2_qiskit.ipynb](https://nbviewer.jupyter.org/github/AnaNeri/quantamorphismsGuide/blob/master/Experiment/qfold_cnot_7x2_qiskit.ipynb)
+* Then do the same for jupyter notebook [fold_cnot_7x2_qiskit.ipynb](https://nbviewer.jupyter.org/github/AnaNeri/quantamorphismsGuide/blob/master/qfold_cnot_7x2_qiskit.ipynb)
 
 
