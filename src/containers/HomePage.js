@@ -14,6 +14,16 @@ function Content() {
 			<Row>
 			<Col md={11}>
        	<br/>
+        <p>
+        This Guide is indended to support the reading of sections 15 to 17 of paper <i>Compiling quantamorphisms for the IBM Q-Experience</i>. These address the use of a tool-chain leading to running quantum circuits generated from quantamorphism specifications on IBM Q-Experience devices.
+        </p>
+
+        <br/>
+        <ul>
+        <li><a href="/caseStudy"> Case Study </a></li>
+        <li><a href="/replicationPackage"> Replication Package </a></li>
+        <li><a href="/detailedPerformance"> Detailed Performance </a></li>
+        </ul>
     	</Col>
     	</Row>
     	</Col>
