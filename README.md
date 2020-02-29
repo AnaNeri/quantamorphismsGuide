@@ -1,40 +1,68 @@
-# Quantamorphisms Guide
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This Guide is indended to support the reading of sections 15 to 17 of paper *Compiling quantamorphisms for the IBM Q-Experience*. These address the use of a tool-chain leading to running quantum circuits generated from quantamorphism specifications on IBM Q-Experience devices.
+## Available Scripts
 
-### Prerequisites
+In the project directory, you can run:
 
-Software required:
-* [Quipper](https://www.mathstat.dal.ca/~selinger/quipper/) (version 0.8)
-* [PyZX](https://github.com/Quantomatic/pyzx) 
-* [QISKit](https://qiskit.org/) (version 0.14) \*
-* [IBM-Q Experience](https://quantum-computing.ibm.com/) account
-* [gawk](https://www.gnu.org/software/gawk/) (quipperToQiskit)
+### `yarn start`
 
-\* Qiskit may run in IBM-Q Experience without the need for installation. 
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Authors
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-* **Ana Neri** - [AnaNeri](https://github.com/AnaNeri)
-* **José Nuno Oliveira** - [JoseNunoOliveira](https://github.com/JoseNunoOliveira)
-* **Rui Soares Barbosa** - [ruisb](https://github.com/ruisb)
+### `yarn test`
 
-### License
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+### `yarn build`
 
-### Acknowledgments
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-We acknowledge the financial support by [INESC TEC](https://www.inesctec.pt/en#intro) and the opportunity granted by [QuantaLab](http://www.quantalab.org/) [IBM Q Academic Hub](https://www.ibm.com/quantum-computing/network/members/).
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-### Tool-chain
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-![alt text](./img/tool-chain.png)
+### `yarn eject`
 
-### Experiment
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-* Start by loading and running source file qfold_cnot_7x2_quipper.hs (nb: quipper requires GHC 8.0 Note: GHC 7.10 is too broken and will not be supported by Quipper. ).
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-* Then do the same for jupyter notebook [fold_cnot_7x2_qiskit.ipynb](https://nbviewer.jupyter.org/github/AnaNeri/quantamorphismsGuide/blob/master/qfold_cnot_7x2_qiskit.ipynb)
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `yarn build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
