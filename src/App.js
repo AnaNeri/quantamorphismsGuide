@@ -1,24 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import MyNav from './components/Nav';
+import CaseStudy from './containers/CaseStudy';
+import ReplicationPackage from './containers/ReplicationPackage';
+import DetailedPerformance from './containers/DetailedPerformance';
+import HomePage from './containers/HomePage';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'; // must import this AND npm install
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <MyNav />
+        <Router>
+            <Switch>
+              <Route path="/caseStudy">
+                <CaseStudy />
+              </Route>
+              <Route path="/replicationPackage">
+                <ReplicationPackage />
+              </Route>
+             <Route path="/detailedPerformance">
+                <DetailedPerformance />
+              </Route>
+              <Route path="/">
+                <HomePage />
+              </Route>
+            </Switch>
+        </Router>
     </div>
   );
 }
