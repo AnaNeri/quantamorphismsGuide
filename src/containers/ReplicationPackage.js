@@ -15,7 +15,7 @@ function Content() {
 			<Col md={11}>
        	<br/>
 
-        <h4>Prerequisites and installation guide</h4>
+        <h4>Prerequisites and Installation Guide</h4>
         <p>
         This section presents all the software required and the installation guide to Ubuntu 18.04.4 .
         </p>
@@ -26,9 +26,9 @@ function Content() {
         </p>
 
         <div style= {{backgroundColor: `#263238`}}>
-        <code style={{color:'white'}}> $ sudo apt install haskell-platform </code>
+        <code style={{color:'white'}}> sudo apt install haskell-platform </code>
         <br/>
-        <code style={{color:'white'}}> $ cabal update </code>
+        <code style={{color:'white'}}> cabal update </code>
         </div>
 
         <br/>
@@ -37,7 +37,7 @@ function Content() {
         </p>
 
         <div style= {{backgroundColor: `#263238`}}>
-        <code style={{color:'white'}}> $ cabal install quipper </code>
+        <code style={{color:'white'}}> cabal install quipper </code>
         </div>
 
         <br/>
@@ -54,31 +54,41 @@ function Content() {
         Then run the following command line.
         </p>    
         <div style= {{backgroundColor: `#263238`}}>
-        <code style={{color:'white'}}> $ conda create -n name_of_my_env python=3 </code>
+        <code style={{color:'white'}}> conda create -n name_of_my_env python=3 </code>
         <br/>
-        <code style={{color:'white'}}> $ source activate name_of_my_env </code>
+        <code style={{color:'white'}}> source activate name_of_my_env </code>
         <br/>
-        <code style={{color:'white'}}> $ pip install -Iv qiskit==0.14.1 </code>
+        <code style={{color:'white'}}> pip install -Iv qiskit==0.14.1 </code>
         </div>
 
         <br/>
         <p>
-        To improve the quantum programs it is essential to install <a href="https://github.com/Quantomatic/pyzx" target="_blank" rel="noopener noreferrer"><b> PyZX </b></a>. 
+        To improve the quantum programs is essential to install <a href="https://github.com/Quantomatic/pyzx" target="_blank" rel="noopener noreferrer"><b> PyZX </b></a>. 
         Run the ensuing commands.
         </p>
         <div style= {{backgroundColor: `#263238`}}>
-        <code style={{color:'white'}}> $ git clone "https://github.com/Quantomatic/pyzx.git" </code>
+        <code style={{color:'white'}}> git clone "https://github.com/Quantomatic/pyzx.git" </code>
         <br/>
-        <code style={{color:'white'}}> $ cd pyzx/ </code>
+        <code style={{color:'white'}}> cd pyzx/ </code>
         <br/>
-        <code style={{color:'white'}}> $ pip install . </code>
+        <code style={{color:'white'}}> pip install . </code>
         </div>
         <br/>
         <p>Finally, install <a href="https://www.gnu.org/software/gawk/" target="_blank" rel="noopener noreferrer"><b>Gawk</b></a>.</p>
 
         <div style= {{backgroundColor: `#263238`}}>
-        <code style={{color:'white'}}> $ sudo apt install gawk </code>
+        <code style={{color:'white'}}> sudo apt install gawk </code>
         </div>
+
+        <br/>
+        
+        <h4>Experiment</h4>
+
+        Download the files:
+
+        <ul>
+        <li></li>
+        </ul>
 
         <br/>
     	</Col>
