@@ -24,6 +24,10 @@ function Content() {
         <li><a href="/replicationPackage"> Replication Package </a></li>
         <li><a href="/detailedPerformance"> Detailed Performance </a></li>
         </ul>
+
+        <br/>
+        <h4>Acknowledgments</h4>
+        We acknowledge the financial support by INESC TEC and the opportunity granted by QuantaLab IBM Q Academic Hub.
     	</Col>
     	</Row>
     	</Col>
