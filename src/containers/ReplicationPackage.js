@@ -3,6 +3,11 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Background from '../images/bg.jpeg';
+import Footer from '../components/Footer';
+import Figure from 'react-bootstrap/Figure';
+
+
+import toolchain from '../images/toolchain.png';
 
 function Content() {
   return (
@@ -26,9 +31,9 @@ function Content() {
         </p>
 
         <div style= {{backgroundColor: `#263238`}}>
-        <code style={{color:'white'}}> sudo apt install haskell-platform </code>
+        <code style={{color:'white'}}> $ sudo apt install haskell-platform </code>
         <br/>
-        <code style={{color:'white'}}> cabal update </code>
+        <code style={{color:'white'}}> $ cabal update </code>
         </div>
 
         <br/>
@@ -37,7 +42,16 @@ function Content() {
         </p>
 
         <div style= {{backgroundColor: `#263238`}}>
-        <code style={{color:'white'}}> cabal install quipper </code>
+        <code style={{color:'white'}}> $ cabal install quipper </code>
+        </div>
+
+        Probably, it is also necessary to run the ensuing commands.
+        <div style= {{backgroundColor: `#263238`}}>
+        <code style={{color:'white'}}> $ echo 'PATH="$HOME/.cabal/bin:$PATH"' </code>
+        <br/>
+        <code style={{color:'white'}}> .bashrc </code>
+        <br/>
+        <code style={{color:'white'}}> $ source .bashrc </code>
         </div>
 
         <br/>
@@ -54,11 +68,11 @@ function Content() {
         Then run the following command line.
         </p>    
         <div style= {{backgroundColor: `#263238`}}>
-        <code style={{color:'white'}}> conda create -n name_of_my_env python=3 </code>
+        <code style={{color:'white'}}> $ conda create -n name_of_my_env python=3 </code>
         <br/>
-        <code style={{color:'white'}}> source activate name_of_my_env </code>
+        <code style={{color:'white'}}> $ source activate name_of_my_env </code>
         <br/>
-        <code style={{color:'white'}}> pip install -Iv qiskit==0.14.1 </code>
+        <code style={{color:'white'}}> $ pip install -Iv qiskit==0.14.1 </code>
         </div>
 
         <br/>
@@ -67,28 +81,34 @@ function Content() {
         Run the ensuing commands.
         </p>
         <div style= {{backgroundColor: `#263238`}}>
-        <code style={{color:'white'}}> git clone "https://github.com/Quantomatic/pyzx.git" </code>
+        <code style={{color:'white'}}> $ git clone "https://github.com/Quantomatic/pyzx.git" </code>
         <br/>
-        <code style={{color:'white'}}> cd pyzx/ </code>
+        <code style={{color:'white'}}> $ cd pyzx/ </code>
         <br/>
-        <code style={{color:'white'}}> pip install . </code>
+        <code style={{color:'white'}}> $ pip install . </code>
         </div>
         <br/>
         <p>Finally, install <a href="https://www.gnu.org/software/gawk/" target="_blank" rel="noopener noreferrer"><b>Gawk</b></a>.</p>
 
         <div style= {{backgroundColor: `#263238`}}>
-        <code style={{color:'white'}}> sudo apt install gawk </code>
+        <code style={{color:'white'}}> $ sudo apt install gawk </code>
         </div>
 
         <br/>
-        
+
         <h4>Experiment</h4>
 
-        Download the files:
+        This paper uses the following tool-chain.
 
-        <ul>
-        <li></li>
-        </ul>
+        <Figure>
+          <Figure.Image
+            src={toolchain}
+          />
+          <Figure.Caption>
+            Tool-chain of the experience.
+          </Figure.Caption>
+        </Figure>
+
 
         <br/>
     	</Col>
@@ -119,6 +139,9 @@ function ReplicationPackage() {
        </Row>  
 	   </Container>
      </div>
+        <footer>
+        <Footer />
+        </footer>
     </div>
   );
 }

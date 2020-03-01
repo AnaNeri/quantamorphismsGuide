@@ -41,9 +41,9 @@ function HomePage() {
   return (
     <div>
       <div style= {{ backgroundImage: `url(${Background})`}}>
-      <center><br/><br/> <h1 style={{ backgroundColor: 'rgb(255,255,255,0.75)'}}>
+      <center><h1><br/><br/> 
       Compiling quantamorphisms for the IBM Q-Experience 
-      </h1><br/><br/><br/></center>
+      <br/><br/><br/></h1></center>
       </div>
       <div>
        <Container>

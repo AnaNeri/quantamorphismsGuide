@@ -3,6 +3,8 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Background from '../images/bg.jpeg';
+import Footer from '../components/Footer'
+
 
 function Content() {
   return (
@@ -42,6 +44,10 @@ function DetailedPerformance() {
        </Row>  
 	   </Container>
 	   </div>
+
+	    <footer>
+        <Footer />
+        </footer>
     </div>
   );
 }
