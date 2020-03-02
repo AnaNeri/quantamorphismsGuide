@@ -98,7 +98,7 @@ function Content() {
 
         <h4>Experiment</h4>
 
-        This paper applys the following tool-chain.
+        This paper applies the following tool-chain.
 
         <Figure>
           <Figure.Image
@@ -109,6 +109,17 @@ function Content() {
           </Figure.Caption>
         </Figure>
 
+        <p>Consider the matrix of GHCi that already produced when defining the case study.</p>
+
+        <p>Download the ensuing file to execute the Quipper section.</p>
+
+        <ul><li><a href="../files/qfold_cnot_7x2_quipper.hs" target="_blank" rel="noopener noreferrer">Quipper File</a></li></ul>
+
+        <p>Afterward, employ the instructions on the Quipper Instructions link.</p>
+
+        <p>Use the following Jupyter File to execute all remaining sections.</p>
+
+        <ul><li><a>PyZX and Qiskit File</a></li></ul>
 
         <br/>
     	</Col>
