@@ -98,7 +98,7 @@ function Content() {
 
         <h4>Experiment</h4>
 
-        This paper uses the following tool-chain.
+        This paper applys the following tool-chain.
 
         <Figure>
           <Figure.Image

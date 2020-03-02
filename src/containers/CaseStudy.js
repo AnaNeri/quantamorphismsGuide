@@ -4,6 +4,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Background from '../images/bg.jpeg';
 import Footer from '../components/Footer'
+import Figure from 'react-bootstrap/Figure';
+import matrix from '../images/matrix.png';
+
 
 function Content() {
   return (
@@ -15,6 +18,16 @@ function Content() {
 			<Row>
 			<Col md={11}>
        	<br/>
+
+        <p>The example analyzed in the paper starts with the generation of the unitary matrix using a quantum fold over a control-not gate. Despite quantum computers managing a considerable number of qubits, this example only manipulates 4 qubits. </p>
+        <Figure>
+          <Figure.Image
+            src={matrix}
+          />
+          <Figure.Caption>
+            Matrix qfold over cnot with 4 qubits.
+          </Figure.Caption>
+        </Figure>
     	</Col>
     	</Row>
     	</Col>
