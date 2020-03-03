@@ -45,7 +45,10 @@ function Content() {
         <code style={{color:'white'}}> $ cabal install quipper </code>
         </div>
 
+        <br/>
+        <p>
         Probably, it is also necessary to run the ensuing commands.
+        </p>
         <div style= {{backgroundColor: `#263238`}}>
         <code style={{color:'white'}}> $ echo 'PATH="$HOME/.cabal/bin:$PATH"' </code>
         <br/>
@@ -80,6 +83,7 @@ function Content() {
         To improve the quantum programs is essential to install <a href="https://github.com/Quantomatic/pyzx" target="_blank" rel="noopener noreferrer"><b> PyZX </b></a>. 
         Run the ensuing commands.
         </p>
+
         <div style= {{backgroundColor: `#263238`}}>
         <code style={{color:'white'}}> $ git clone "https://github.com/Quantomatic/pyzx.git" </code>
         <br/>
@@ -115,11 +119,11 @@ function Content() {
 
         <ul><li><a href="../files/qfold_cnot_7x2_quipper.hs" target="_blank" rel="noopener noreferrer">Quipper File</a></li></ul>
 
-        <p>Afterward, employ the instructions on the Quipper Instructions link.</p>
+        <p>Afterward, employ the instructions on the <a href="../files/qfold_cnot_7x2_quipper.hs" target="_blank" rel="noopener noreferrer">Quipper Instructions</a> link.</p>
 
         <p>Use the following Jupyter File to execute all remaining sections.</p>
 
-        <ul><li><a>PyZX and Qiskit File</a></li></ul>
+        <ul><li><a href="https://nbviewer.jupyter.org/github/AnaNeri/quantamorphismsGuide/blob/master/qfold_cnot_7x2_qiskit.ipynb" target="_blank" rel="noopener noreferrer">PyZX and Qiskit File</a></li></ul>
 
         <br/>
     	</Col>
