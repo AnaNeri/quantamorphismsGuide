@@ -115,11 +115,11 @@ function Content() {
 
         <p>Download the ensuing file to execute the Quipper section.</p>
 
-        <ul><li><a href="../files/qfold_cnot_7x2_quipper.hs" target="_blank" rel="noopener noreferrer">Quipper File</a></li></ul>
+        <ul><li><a href="https://github.com/AnaNeri/quantamorphismsGuide/blob/master/qfold_cnot_7x2_quipper.hs" target="_blank" rel="noopener noreferrer">Quipper File</a></li></ul>
 
-        <p>Afterward, employ the instructions on the <a href="../files/qfold_cnot_7x2_quipper.hs" target="_blank" rel="noopener noreferrer">Quipper Instructions</a> link.</p>
+        <p>Afterward, employ the instructions on the <a href="https://github.com/AnaNeri/quantamorphismsGuide/blob/master/quipperInstructions.md" target="_blank" rel="noopener noreferrer">Quipper Instructions</a> link.</p>
         
-        <p>The tool quipperToQiskit does not change the least significant bit with the most significant bit. Do this process manually and correct any inconsistencies. Then, convert the Quipper circuit into a Qiskit circuit by running the following command line.</p>
+        <p>The tool <a href="https://github.com/AnaNeri/quantamorphismsGuide/blob/master/quipperToQiskit.gawk"target="_blank" rel="noopener noreferrer"> quipperToQiskit </a>does not change the least significant bit with the most significant bit. Do this process manually and correct any inconsistencies. Then, convert the Quipper circuit into a Qiskit circuit by running the following command line.</p>
 
         <div style= {{backgroundColor: `#263238`}}>
         <code style={{color:'white'}}> $ awk -f quipperToQiskit.gawk circuit_cnot_7x2_quipper_A.txt > circuit_cnot_7x2_qiskit.txt </code>

@@ -68,10 +68,10 @@ function Content() {
       <h4>Output Files</h4>
 
       <ul>
-        <li>Circuit description - Quipper</li>
-        <li>Circuit description - Quipper Adapted</li>
-        <li>Circuit description - Qiskit Adapted</li>
-        <li>Circuit description - PyZX</li>
+        <li><a href="https://github.com/AnaNeri/quantamorphismsGuide/blob/master/circuit_cnot_7x2_quipper.txt" target="_blank" rel="noopener noreferrer">Circuit description - Quipper</a></li>
+        <li><a href="https://github.com/AnaNeri/quantamorphismsGuide/blob/master/circuit_cnot_7x2_quipper_A.txt" target="_blank" rel="noopener noreferrer">Circuit description - Quipper Adapted</a></li>
+        <li><a href="https://github.com/AnaNeri/quantamorphismsGuide/blob/master/circuit_cnot_7x2_qiskit.txt" target="_blank" rel="noopener noreferrer">Circuit description - Qiskit Adapted</a></li>
+        <li><a href="https://github.com/AnaNeri/quantamorphismsGuide/blob/master/circuit_cnot_7x2_qiskit_pyzx.txt" target="_blank" rel="noopener noreferrer">Circuit description - PyZX</a></li>
       </ul>
       <br/>
         <h4>Circuit Information</h4>
