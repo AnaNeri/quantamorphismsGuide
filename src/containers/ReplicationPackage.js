@@ -50,9 +50,7 @@ function Content() {
         Probably, it is also necessary to run the ensuing commands.
         </p>
         <div style= {{backgroundColor: `#263238`}}>
-        <code style={{color:'white'}}> $ echo 'PATH="$HOME/.cabal/bin:$PATH"' </code>
-        <br/>
-        <code style={{color:'white'}}> .bashrc </code>
+        <code style={{color:'white'}}> $ echo 'PATH="$HOME/.cabal/bin:$PATH"' >> .bashrc </code>
         <br/>
         <code style={{color:'white'}}> $ source .bashrc </code>
         </div>
@@ -75,7 +73,7 @@ function Content() {
         <br/>
         <code style={{color:'white'}}> $ source activate name_of_my_env </code>
         <br/>
-        <code style={{color:'white'}}> $ pip install -Iv qiskit==0.14.1 </code>
+        <code style={{color:'white'}}> $ pip3 install -Iv qiskit==0.14.1 </code>
         </div>
 
         <br/>
@@ -89,7 +87,7 @@ function Content() {
         <br/>
         <code style={{color:'white'}}> $ cd pyzx/ </code>
         <br/>
-        <code style={{color:'white'}}> $ pip install . </code>
+        <code style={{color:'white'}}> $ pip install -e . </code>
         </div>
         <br/>
         <p>Finally, install <a href="https://www.gnu.org/software/gawk/" target="_blank" rel="noopener noreferrer"><b>Gawk</b></a>.</p>
@@ -120,8 +118,16 @@ function Content() {
         <ul><li><a href="../files/qfold_cnot_7x2_quipper.hs" target="_blank" rel="noopener noreferrer">Quipper File</a></li></ul>
 
         <p>Afterward, employ the instructions on the <a href="../files/qfold_cnot_7x2_quipper.hs" target="_blank" rel="noopener noreferrer">Quipper Instructions</a> link.</p>
+        
+        <p>The tool quipperToQiskit does not change the least significant bit with the most significant bit. Do this process manually and correct any inconsistencies. Then, convert the Quipper circuit into a Qiskit circuit by running the following command line.</p>
 
+        <div style= {{backgroundColor: `#263238`}}>
+        <code style={{color:'white'}}> $ awk -f quipperToQiskit.gawk circuit_cnot_7x2_quipper_A.txt > circuit_cnot_7x2_qiskit.txt </code>
+        </div>
+        <br/>
+        
         <p>Use the following Jupyter File to execute all remaining sections.</p>
+
 
         <ul><li><a href="https://nbviewer.jupyter.org/github/AnaNeri/quantamorphismsGuide/blob/master/qfold_cnot_7x2_qiskit.ipynb" target="_blank" rel="noopener noreferrer">PyZX and Qiskit File</a></li></ul>
 

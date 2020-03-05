@@ -1,0 +1,149 @@
+Inputs: 0:Qbit, 1:Qbit, 2:Qbit, 3:Qbit, 4:Qbit
+QInit0(4)
+QInit0(3)
+QInit0(2)
+QInit0(1)
+Comment[""](0:"|0>[0]", 1:"|0>[1]", 2:"|0>[2]", 3:"|0>")
+Comment["before oracle"]()
+Comment["ENTER: exact_synthesis"](0:"q[0]", 1:"q[1]", 2:"q[2]", 3:"q[3]")
+QInit0(0) with nocontrol
+Comment["ENTER: cc_iX"](0:"c1.+", 1:"c2.-", 4:"q")
+QGate["H"](0) with nocontrol
+QGate["not"](4) with controls=[+0] with nocontrol
+QGate["not"](3) with controls=[+4] with nocontrol
+QGate["T"](4) with nocontrol
+QGate["T"](3) with nocontrol
+QGate["not"](4) with controls=[+0] with nocontrol
+QGate["not"](3) with controls=[+4] with nocontrol
+QGate["T"]*(0) with nocontrol
+QGate["T"]*(3) with nocontrol
+QGate["not"](3) with controls=[+0] with nocontrol
+QGate["H"](0) with nocontrol
+Comment["EXIT: cc_iX"](0:"c1.+", 1:"c2.-", 4:"q")
+Comment["ENTER: toffoli_AMMR"](2:"c1.+", 3:"q", 4:"c2.+")
+QGate["H"](1) with nocontrol
+QGate["T"](1) with nocontrol
+QGate["T"](2) with nocontrol
+QGate["T"](0) with nocontrol
+QGate["not"](0) with controls=[+2]
+QGate["not"](2) with controls=[+1]
+QGate["not"](1) with controls=[+0]
+QGate["T"]*(2) with nocontrol
+QGate["T"](1) with nocontrol
+QGate["not"](2) with controls=[+0]
+QGate["T"]*(2) with nocontrol
+QGate["T"]*(0) with nocontrol
+QGate["not"](2) with controls=[+1]
+QGate["not"](1) with controls=[+0]
+QGate["not"](0) with controls=[+2]
+QGate["H"](1) with nocontrol
+Comment["EXIT: toffoli_AMMR"](2:"c1.+", 3:"q", 4:"c2.+")
+Comment["EXIT: cc_iX"]*(0:"c1.+", 1:"c2.-", 4:"q")
+QGate["H"](0) with nocontrol
+QGate["not"](3) with controls=[+0] with nocontrol
+QGate["T"](3) with nocontrol
+QGate["T"](0) with nocontrol
+QGate["not"](3) with controls=[+4] with nocontrol
+QGate["not"](4) with controls=[+0] with nocontrol
+QGate["T"]*(3) with nocontrol
+QGate["T"]*(4) with nocontrol
+QGate["not"](3) with controls=[+4] with nocontrol
+QGate["not"](4) with controls=[+0] with nocontrol
+QGate["H"](0) with nocontrol
+Comment["ENTER: cc_iX"]*(0:"c1.+", 1:"c2.-", 4:"q")
+QTerm0(0) with nocontrol
+QInit0(0) with nocontrol
+Comment["ENTER: cc_iX"](0:"c1.+", 1:"c2.-", 4:"q")
+QGate["H"](0) with nocontrol
+QGate["not"](4) with controls=[+0] with nocontrol
+QGate["not"](3) with controls=[+4] with nocontrol
+QGate["T"](4) with nocontrol
+QGate["T"](3) with nocontrol
+QGate["not"](4) with controls=[+0] with nocontrol
+QGate["not"](3) with controls=[+4] with nocontrol
+QGate["T"]*(0) with nocontrol
+QGate["T"]*(3) with nocontrol
+QGate["not"](3) with controls=[+0] with nocontrol
+QGate["H"](0) with nocontrol
+Comment["EXIT: cc_iX"](0:"c1.+", 1:"c2.-", 4:"q")
+Comment["ENTER: toffoli_AMMR"](2:"c1.-", 3:"q", 4:"c2.+")
+QGate["H"](1) with nocontrol
+QGate["T"](1) with nocontrol
+QGate["T"]*(2) with nocontrol
+QGate["T"](0) with nocontrol
+QGate["not"](0) with controls=[+2]
+QGate["not"](2) with controls=[+1]
+QGate["not"](1) with controls=[+0]
+QGate["T"](2) with nocontrol
+QGate["T"]*(1) with nocontrol
+QGate["not"](2) with controls=[+0]
+QGate["T"]*(2) with nocontrol
+QGate["T"](0) with nocontrol
+QGate["not"](2) with controls=[+1]
+QGate["not"](1) with controls=[+0]
+QGate["not"](0) with controls=[+2]
+QGate["H"](1) with nocontrol
+Comment["EXIT: toffoli_AMMR"](2:"c1.-", 3:"q", 4:"c2.+")
+Comment["EXIT: cc_iX"]*(0:"c1.+", 1:"c2.-", 4:"q")
+QGate["H"](0) with nocontrol
+QGate["not"](3) with controls=[+0] with nocontrol
+QGate["T"](3) with nocontrol
+QGate["T"](0) with nocontrol
+QGate["not"](3) with controls=[+4] with nocontrol
+QGate["not"](4) with controls=[+0] with nocontrol
+QGate["T"]*(3) with nocontrol
+QGate["T"]*(4) with nocontrol
+QGate["not"](3) with controls=[+4] with nocontrol
+QGate["not"](4) with controls=[+0] with nocontrol
+QGate["H"](0) with nocontrol
+Comment["ENTER: cc_iX"]*(0:"c1.+", 1:"c2.-", 4:"q")
+QTerm0(0) with nocontrol
+QInit0(0) with nocontrol
+Comment["ENTER: cc_iX"](0:"c1.-", 1:"c2.+", 4:"q")
+QGate["H"](0) with nocontrol
+QGate["not"](4) with controls=[+0] with nocontrol
+QGate["not"](3) with controls=[+4] with nocontrol
+QGate["T"]*(4) with nocontrol
+QGate["T"](3) with nocontrol
+QGate["not"](4) with controls=[+0] with nocontrol
+QGate["not"](3) with controls=[+4] with nocontrol
+QGate["T"]*(0) with nocontrol
+QGate["T"](3) with nocontrol
+QGate["not"](3) with controls=[+0] with nocontrol
+QGate["H"](0) with nocontrol
+Comment["EXIT: cc_iX"](0:"c1.-", 1:"c2.+", 4:"q")
+Comment["ENTER: toffoli_AMMR"](2:"c1.+", 3:"q", 4:"c2.+")
+QGate["H"](1) with nocontrol
+QGate["T"](1) with nocontrol
+QGate["T"](2) with nocontrol
+QGate["T"](0) with nocontrol
+QGate["not"](0) with controls=[+2]
+QGate["not"](2) with controls=[+1]
+QGate["not"](1) with controls=[+0]
+QGate["T"]*(2) with nocontrol
+QGate["T"](1) with nocontrol
+QGate["not"](2) with controls=[+0]
+QGate["T"]*(2) with nocontrol
+QGate["T"]*(0) with nocontrol
+QGate["not"](2) with controls=[+1]
+QGate["not"](1) with controls=[+0]
+QGate["not"](0) with controls=[+2]
+QGate["H"](1) with nocontrol
+Comment["EXIT: toffoli_AMMR"](2:"c1.+", 3:"q", 4:"c2.+")
+Comment["EXIT: cc_iX"]*(0:"c1.-", 1:"c2.+", 4:"q")
+QGate["H"](0) with nocontrol
+QGate["not"](3) with controls=[+0] with nocontrol
+QGate["T"]*(3) with nocontrol
+QGate["T"](0) with nocontrol
+QGate["not"](3) with controls=[+4] with nocontrol
+QGate["not"](4) with controls=[+0] with nocontrol
+QGate["T"]*(3) with nocontrol
+QGate["T"](4) with nocontrol
+QGate["not"](3) with controls=[+4] with nocontrol
+QGate["not"](4) with controls=[+0] with nocontrol
+QGate["H"](0) with nocontrol
+Comment["ENTER: cc_iX"]*(0:"c1.-", 1:"c2.+", 4:"q")
+QTerm0(0) with nocontrol
+Comment["EXIT: exact_synthesis"](0:"q[0]", 1:"q[1]", 2:"q[2]", 3:"q[3]")
+Comment["after oracle"]()
+Outputs: 0:Cbit, 1:Cbit, 2:Cbit, 3:Cbit, 4:Qbit

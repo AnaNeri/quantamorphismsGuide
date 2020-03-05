@@ -5,22 +5,17 @@ import Quipper.Internal
 
 import Quantum.Synthesis.Matrix
 import Quantum.Synthesis.Ring
-import QuipperLib.Synthesis
+import Quipper.Libraries.Synthesis
 
-import QuipperLib.Decompose.GateBase
-import QuipperLib.Decompose
+import Quipper.Libraries.Decompose.GateBase
+import Quipper.Libraries.Decompose
 
 import Data.Complex
 import Data.Ratio
 import Data.Tuple
 
-import Libraries.RandomSource
-
--- import modules for simulations
-import qualified Data.Map as Map
-import QuipperLib.Simulation
+import Quipper.Utils.RandomSource
 import System.Random
-import Control.Monad (replicateM)
 
 -- declare sample_oracle's data type
 data Oracle = Oracle {
@@ -52,7 +47,6 @@ circuit_function oracle = do
 
 
 -- * From a matrix
-
 type Sixteen = Ten_and Six
 
 mymatrix :: Matrix Sixteen Sixteen (Integer)
@@ -73,8 +67,6 @@ mymatrix = matrix [[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], -- ([],0)
                    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0], -- ([0,0,0],0)
                    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]] -- ([0,0,0],1)
 
-
-
 synthesized = exact_synthesis mymatrix
 
 circuit ::([Qubit], Qubit)-> Circ ([Qubit], Qubit)
@@ -88,49 +80,36 @@ rand = RandomSource(fst(split(mkStdGen 10)))
 prec = 20 * bits
 circuit_decompose = decompose_generic (Standard prec rand) circuit
 
--- simulate function
-simulate :: Circ ([Bit],Bit) -> IO ()
-simulate circuit = print (sim_generic (1.0::Float) circuit)
 
-main1 :: IO ()
-main1 = do
+--
+original_pdf :: IO ()
+original_pdf = do
   print_generic Preview (circuit_function my_oracle)
     where
-   -- declare empty_oracle's data type
-   my_oracle :: Oracle
-   my_oracle = Oracle {
-     -- set the length of qubit string
-      qubit_num = 3,
-      function = circuit
-   }
- -- print mymatrix 
+    -- declare empty_oracle's data type
+    my_oracle :: Oracle
+    my_oracle = Oracle {
+    -- set the length of qubit string
+        qubit_num = 3,
+        function = circuit
+    }
 
-main2 :: IO ()
-main2 = do
+-- 
+original_ASCII :: IO ()
+original_ASCII = do
   print_generic ASCII (circuit_function my_oracle)
     where
-   -- declare empty_oracle's data type
-   my_oracle :: Oracle
-   my_oracle = Oracle {
-     -- set the length of qubit string
-      qubit_num = 3,
-      function = circuit
-   }
+     -- declare empty_oracle's data type
+     my_oracle :: Oracle
+     my_oracle = Oracle {
+      -- set the length of qubit string
+       qubit_num = 3,
+       function = circuit
+     }
 
-main3 :: IO ()
-main3 = do 
-  simulate (circuit_function my_oracle)
-  where
-   -- declare empty_oracle's data type
-   my_oracle :: Oracle
-   my_oracle = Oracle {
-     -- set the length of qubit string
-      qubit_num = 3,
-      function = circuit
-   }
 
-main4 :: IO ()
-main4 = do
+decompose_pdf :: IO ()
+decompose_pdf = do
   print_generic Preview (circuit_function my_oracle)
     where
    -- declare empty_oracle's data type
@@ -142,8 +121,8 @@ main4 = do
    }
  -- print mymatrix 
 
-main5 :: IO ()
-main5 = do
+decompose_ASCII :: IO ()
+decompose_ASCII = do
   print_generic ASCII (circuit_function my_oracle)
     where
    -- declare empty_oracle's data type
@@ -154,58 +133,39 @@ main5 = do
       function = circuit_decompose
    }
 
-main6 :: IO ()
-main6 = do 
-  simulate (circuit_function my_oracle)
-  where
-   -- declare empty_oracle's data type
-   my_oracle :: Oracle
-   my_oracle = Oracle {
-     -- set the length of qubit string
-      qubit_num = 3,
-      function = circuit_decompose
-   }
 
-main = do 
-  putStrLn "\n \n choose an option:"
+main_menu = do 
+  putStrLn "\n \n \n \n \n \n \n \n choose an option:"
   putStrLn " 1 - PDF original circuit\n"
   putStrLn " 2 - text description of original circuit\n"
-  putStrLn " 3 - original simulation\n"
-  putStrLn " 4 - PDF decomposed circuit\n"
-  putStrLn " 5 - text description of decomposed circuit\n"
-  putStrLn " 6 - simulation of the decomposed circuit \n"
-  putStrLn " 7 - exit\n"
+  putStrLn " 3 - PDF decomposed circuit\n"
+  putStrLn " 4 - text description of decomposed circuit\n"
+  putStrLn " 5 - exit\n"
   line <- getLine
   case line of
-    "1" -> do main1
+    "1" -> do original_pdf
               main
-    "2" -> do main2
+    "2" -> do original_ASCII
               main
-    "3" -> do main3
+    "3" -> do decompose_pdf
               main
-    "4" -> do main4
+    "4" -> do decompose_ASCII
               main
-    "5" -> do main5
-              main
-    "6" -> do main6
-              main
-    "7" -> do exitSuccess
+    "5" -> do exitSuccess
     _ -> do main
 
+main_qfold_cnot_7x2 = do
+  decompose_ASCII
+
+main = do
+  --main_menu
+
+  -- or
   -- if you want the circuit description a .txt file 
-  -- comment the menu above 
+  -- comment the main_menu above 
   -- replacing it by:
-  -- main2
+
+  main_qfold_cnot_7x2
+
   -- and run:
-  -- $ ./qfold_cnot_7_x_2 > matrix_cnot_7_x_2_quipper.txt 
-
-   -- with a real quantum computer, when we terminate a qubit with an
-   -- assertion we have no way of actually checking the assertion. The
-   -- best we can do is measure the qubit and then throw an error if
-   -- the assertion is incorrect, which may only occur with a small
-   -- probability. Here, we could split the quantum state and see if
-   -- the qubit exists in the incorrect state with any non-zero
-   -- probability, and throw an error. However, we don't do this
-   -- because an error would sometimes be thrown due to rounding.
-
-   -- from https://github.com/silky/quipper/blob/master/QuipperLib/Simulation/QuantumSimulation.hs
+  -- $ ./qfold_cnot_7x2_quipper > circuit_cnot_7x2_quipper.txt  
