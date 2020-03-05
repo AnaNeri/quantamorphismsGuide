@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Background from '../images/bg.jpeg';
+import { SocialIcon } from 'react-social-icons';
 
 function Content() {
   return (
@@ -28,7 +29,12 @@ function Content() {
         <br/>
         <h4>Acknowledgments</h4>
         We acknowledge the financial support by INESC TEC and the opportunity granted by QuantaLab IBM Q Academic Hub.
-    	</Col>
+    	
+    	<br/>
+    	<br/>
+    	<br/>
+    	<center><SocialIcon url="https://github.com/AnaNeri/quantamorphismsGuide"/></center>
+	</Col>
     	</Row>
     	</Col>
     	</Row>
