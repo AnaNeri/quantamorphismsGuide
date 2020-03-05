@@ -1,7 +1,8 @@
 BEGIN {FS = "[/(//), /]";  RS = "\n"; OFS=" \n "; p=0; g[p] = "_";
 		circuit="qc";
 		quantum_r="qr";
-		classical_r="cr";}
+		classical_r="cr";
+		pi = atan2(0, -1);}
 /"not"\]\([0-9]*\) with nocontrol$/ {gateT = $2;
 			 gateI = circuit ".x(" quantum_r "[" gateT;
 			 gateF = "])";
@@ -95,6 +96,16 @@ BEGIN {FS = "[/(//), /]";  RS = "\n"; OFS=" \n "; p=0; g[p] = "_";
 			 gate = gateI gateF
 			 print gate;}
 
+
+/QRot/ {angle = ($4 * 2)/ pi;
+		gateT = $5;
+	    gateI = circuit ".rz(" angle "*pi ," quantum_r "[" gateT;
+		gateF = "])";
+		gate = gateI gateF
+		print gate;}
+
+
+
 /"not"\]\([0-9]*\) with control$/ {gateT = $2;
 			   gateC = substr($6, 1, length($6)-1);
 			   gateI = circuit ".cx(" quantum_r "[" gateC;
@@ -124,6 +135,13 @@ BEGIN {FS = "[/(//), /]";  RS = "\n"; OFS=" \n "; p=0; g[p] = "_";
 			   gateF = "])";
 			   gate = gateI gateM gateF;
 			   print gate;}
+/"Z"\]\([0-9]*\) with controls=\[(\+|\-)[0-9]*\]$/   {gateT = $2;
+			   gateC = substr($5, 12, length($5)-12);
+			   gateI = circuit ".cz(" quantum_r "[" gateC;
+                           gateM = "]," quantum_r "[" gateT ;
+			   gateF = "])";
+			   gate = gateI gateM gateF;
+			   print gate;}
 
 /"not"\]\([0-9]*\) with controls=\[(\+|\-)[0-9]*\] with nocontrol$/ {gateT = $2;
 			   gateC = substr($5, 12, length($5)-12);
@@ -139,6 +157,14 @@ BEGIN {FS = "[/(//), /]";  RS = "\n"; OFS=" \n "; p=0; g[p] = "_";
 			   gateF = "])";
 			   gate = gateI gateM gateF;
 			   print gate;}
+/"Z"\]\([0-9]*\) with controls=\[(\+|\-)[0-9]*\] with nocontrol$/   {gateT = $2;
+			   gateC = substr($5, 12, length($5)-12);
+			   gateI = circuit ".cz(" quantum_r "[" gateC;
+                           gateM = "]," quantum_r "[" gateT ;
+			   gateF = "])";
+			   gate = gateI gateM gateF;
+			   print gate;}
+
 
 /"X"\]\([0-9]*\) with controls=\[(\+|\-)[0-9]*, (\+|\-)[0-9]*\]$/   {
 			   simb1 = substr($5, 11, 1);
@@ -273,4 +299,4 @@ BEGIN {FS = "[/(//), /]";  RS = "\n"; OFS=" \n "; p=0; g[p] = "_";
 /W"\]\*\([0-9]*/ {print "# the gate is not allowed"}
 /W"\]\([0-9]*/	{print "# the gate is not allowed"}
 
-END   {print "# don't forget update the number of qubits and bits registered"}
+END   {}
