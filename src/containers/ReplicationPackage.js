@@ -47,7 +47,7 @@ function Content() {
 
         <br/>
         <p>
-        Probably, it is also necessary to run the ensuing commands.
+        You may need to run the ensuing commands.
         </p>
         <div style= {{backgroundColor: `#263238`}}>
         <code style={{color:'white'}}> $ echo 'PATH="$HOME/.cabal/bin:$PATH"' >> .bashrc </code>
@@ -100,7 +100,7 @@ function Content() {
 
         <h4>Experiment</h4>
 
-        This paper applies the following tool-chain.
+        The experiments in the paper follow the tool-chain.
 
         <Figure>
           <Figure.Image
