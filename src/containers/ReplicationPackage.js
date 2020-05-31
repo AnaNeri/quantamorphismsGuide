@@ -57,7 +57,7 @@ function Content() {
 
         <br/>
         <p>
-        Create an <a href="https://quantum-computing.ibm.com/" target="_blank" rel="noopener noreferrer"><b> IBM Q Experienece</b> </a> account to run the quantum programs in a quantum device.
+        Create an <a href="https://quantum-computing.ibm.com/" target="_blank" rel="noopener noreferrer"><b> IBM Q Experience</b> </a> account to run the quantum programs in a quantum device.
         </p>
         <p>
         Although IBM Q Experience allows running the experiences online, it may be necessary to install <a href="https://qiskit.org/" target="_blank" rel="noopener noreferrer"><b> Qiskit </b></a> (version 0.14.1) to replicate the results in the paper.
