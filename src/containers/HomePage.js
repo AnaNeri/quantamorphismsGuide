@@ -28,7 +28,7 @@ function Content() {
 
         <br/>
         <h4>Acknowledgments</h4>
-        We acknowledge the financial support by INESC TEC and the opportunity granted by QuantaLab IBM Q Academic Hub.
+        This work is financed by the ERDF – European Regional Development Fund through the Operational Programme for Competitiveness and Internationalisation - COMPETE 2020 Programme and by National Funds through the Portuguese funding agency, FCT -- Fundação para a Ciência e a Tecnologia, within project POCI-01-0145-FEDER-030947.
     	
     	<br/>
     	<br/>
