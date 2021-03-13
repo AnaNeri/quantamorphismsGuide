@@ -18,15 +18,13 @@ function Content() {
         <p>
         This Guide is indended to support the reading of sections 15 to 17 of paper <i>Compiling quantamorphisms for the IBM Q-Experience</i>. These address the use of a tool-chain leading to running quantum circuits generated from quantamorphism specifications on IBM Q-Experience devices.
         </p>
-        <p>
-        After peer review, the authors added a case study removing the unitary matrix from the tool-chain. Find more information in <a href="https://github.com/AnaNeri/quantamorphismsGuide/blob/master/compositionality.ipynb" target="_blank" rel="noopener noreferrer">Jupyter Notebook - Compositionality</a>.
-        </p>
 
         <br/>
         <ul>
         <li><a href="/caseStudy"> Case Study </a></li>
         <li><a href="/replicationPackage"> Replication Package </a></li>
         <li><a href="/detailedPerformance"> Detailed Performance </a></li>
+        <li><a href="https://github.com/AnaNeri/quantamorphismsGuide/blob/master/improvements.ipynb" target="_blank" rel="noopener noreferrer">Improvements in the toolchain</a></li>
         </ul>
 
         <br/>
