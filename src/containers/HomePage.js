@@ -24,7 +24,7 @@ function Content() {
         <li><a href="/caseStudy"> Case Study </a></li>
         <li><a href="/replicationPackage"> Replication Package </a></li>
         <li><a href="/detailedPerformance"> Detailed Performance </a></li>
-        <li><a href="https://github.com/AnaNeri/quantamorphismsGuide/blob/master/improvements.ipynb" target="_blank" rel="noopener noreferrer">Improvements in the toolchain</a></li>
+        <li><a href="https://nbviewer.jupyter.org/github/AnaNeri/quantamorphismsGuide/blob/master/improvements.ipynb" target="_blank" rel="noopener noreferrer">Improvements in the toolchain</a></li>
         </ul>
 
         <br/>
