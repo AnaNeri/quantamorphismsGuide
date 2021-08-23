@@ -16,7 +16,7 @@ function Content() {
 			<Col md={11}>
        	<br/>
         <p>
-        This Guide is indended to support the reading of sections 15 to 17 of paper <i>Compiling quantamorphisms for the IBM Q-Experience</i>. These address the use of a tool-chain leading to running quantum circuits generated from quantamorphism specifications on IBM Q-Experience devices.
+        This Guide is intended to support the reading of sections 15 to 17 of paper <i>Compiling quantamorphisms for the IBM Q-Experience</i>. These address the use of a tool-chain leading to running quantum circuits generated from quantamorphism specifications on IBM Q-Experience devices.
         </p>
 
         <br/>
@@ -24,12 +24,17 @@ function Content() {
         <li><a href="/caseStudy"> Case Study </a></li>
         <li><a href="/replicationPackage"> Replication Package </a></li>
         <li><a href="/detailedPerformance"> Detailed Performance </a></li>
-        <li><a href="https://nbviewer.jupyter.org/github/AnaNeri/quantamorphismsGuide/blob/master/improvements.ipynb" target="_blank" rel="noopener noreferrer">Improving the tool chain</a></li>
+        <li> Improving the tool chain:
+          <ul>
+          <li><a href="https://github/AnaNeri/quantamorphismsGuide/blob/master/qfor.pdf" target="_blank" rel="noopener noreferree">Technical Note</a></li>
+          <li><a href="https://nbviewer.jupyter.org/github/AnaNeri/quantamorphismsGuide/blob/master/improvements.ipynb" target="_blank" rel="noopener noreferrer">Jupyter Notebook</a></li>
+          </ul>
+        </li>
         </ul>
 
         <br/>
         <h4>Acknowledgments</h4>
-        <p>This work is financed by the ERDF – European Regional Development Fund through the Operational Programme for Competitiveness and Internationalisation - COMPETE 2020 Programme and by National Funds through the Portuguese funding agency, FCT -- Fundação para a Ciência e a Tecnologia, within project POCI-01-0145-FEDER-030947.
+        <p>This work is financed by the ERDF – European Regional Development Fund through the Operational Programme for Competitiveness and Internationalisation - COMPETE 2020 Programme and by National Funds through the Portuguese funding agency, FCT &ndash; Fundação para a Ciência e a Tecnologia, within project POCI-01-0145-FEDER-030947.
     	  </p>
         <p>
         In this project, all experiments on IBM Q devices have been carried out under the IBM Q Hub at Minho license.
