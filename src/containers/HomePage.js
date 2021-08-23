@@ -26,8 +26,8 @@ function Content() {
         <li><a href="/detailedPerformance"> Detailed Performance </a></li>
         <li> Improving the tool chain:
           <ul>
-          <li><a href="https://github/AnaNeri/quantamorphismsGuide/blob/master/qfor.pdf" target="_blank" rel="noopener noreferree">Technical Note</a></li>
-          <li><a href="https://nbviewer.jupyter.org/github/AnaNeri/quantamorphismsGuide/blob/master/improvements.ipynb" target="_blank" rel="noopener noreferrer">Jupyter Notebook</a></li>
+          <li><a href="https://github/AnaNeri/quantamorphismsGuide/blob/master/qfor.pdf" target="_blank" rel="noopener">Technical Note</a></li>
+          <li><a href="https://nbviewer.jupyter.org/github/AnaNeri/quantamorphismsGuide/blob/master/improvements.ipynb" target="_blank" rel="noopener">Jupyter Notebook</a></li>
           </ul>
         </li>
         </ul>
