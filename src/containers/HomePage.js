@@ -16,7 +16,7 @@ function Content() {
 			<Col md={11}>
        	<br/>
         <p>
-        This Guide is intended to support the reading of sections 15 to 17 of paper <i>Compiling quantamorphisms for the IBM Q-Experience</i>. These address the use of a tool-chain leading to running quantum circuits generated from quantamorphism specifications on IBM Q-Experience devices.
+        This Guide is intended to support the reading of sections 15 to 17 of paper <i>Compiling quantamorphisms for the IBM Q Experience</i>. These address the use of a tool-chain leading to running quantum circuits generated from quantamorphism specifications on IBM Q-Experience devices.
         </p>
 
         <br/>
@@ -58,7 +58,7 @@ function HomePage() {
     <div>
       <div style= {{ backgroundImage: `url(${Background})`}}>
       <center><h1><br/><br/> 
-      Compiling quantamorphisms for the IBM Q-Experience 
+      Compiling quantamorphisms for the IBM Q Experience 
       <br/><br/><br/></h1></center>
       </div>
       <div>
